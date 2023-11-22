@@ -3,4 +3,4 @@ openpyxl
 yfinance==0.2.31
 numpy_financial==1.0.0
 wordcloud==1.9.2
-pandas
+pingouin
