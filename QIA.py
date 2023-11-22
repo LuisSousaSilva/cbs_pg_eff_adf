@@ -219,3 +219,9 @@ def compute_diference_in_years(start, end):
     difference  = end_date - start_date
     difference_in_years = (difference.days)/365.2421
     return difference_in_years
+
+def compute_uniform_pdf(min_value, max_value, step=1):
+    return scipy.stats.uniform.pdf(np.arange(min_value, max_value+1, step), min_value, max_value)[0]
+
+def compute_uniform_cdf(min_value, max_value, step=1):
+    return scipy.stats.uniform.cdf(np.arange(min_value+1, max_value+2, step), min_value, max_value)
